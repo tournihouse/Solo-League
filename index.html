@@ -14,7 +14,7 @@
             color: #333;
         }
         .container {
-            max-width: 600px;
+            max-width: 1000px; /* Increased the max-width to accommodate both tables side by side */
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.9);
             padding: 20px;
@@ -32,10 +32,13 @@
             color: #2b2d42;
             margin-bottom: 20px;
         }
+        .tables-container {
+            display: flex;
+            gap: 20px; /* Space between the tables */
+        }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
             background: #fff;
             border-radius: 10px;
             overflow: hidden;
@@ -67,116 +70,128 @@
     <div class="container">
         <h1>Solo League Tournament Schedule</h1>
         <h3>Matchups</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Match No.</th>
-                    <th>Matchup</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td><span class="team1">Karthik</span> vs <span class="team2">Dinesh</span></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td><span class="team1">Prince</span> vs <span class="team2">Anil</span></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td><span class="team1">Venky</span> vs <span class="team2">Sharwin</span></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td><span class="team1">Ajay</span> vs <span class="team2">Prakash</span></td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td><span class="team1">Balu</span> vs <span class="team2">Honey</span></td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td><span class="team1">Karthik</span> vs <span class="team2">Prince</span></td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td><span class="team1">Dinesh</span> vs <span class="team2">Anil</span></td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td><span class="team1">Venky</span> vs <span class="team2">Ajay</span></td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td><span class="team1">Sharwin</span> vs <span class="team2">Prakash</span></td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td><span class="team1">Balu</span> vs <span class="team2">Karthik</span></td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td><span class="team1">Dinesh</span> vs <span class="team2">Prince</span></td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td><span class="team1">Anil</span> vs <span class="team2">Venky</span></td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td><span class="team1">Sharwin</span> vs <span class="team2">Balu</span></td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td><span class="team1">Ajay</span> vs <span class="team2">Honey</span></td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td><span class="team1">Prakash</span> vs <span class="team2">Anil</span></td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td><span class="team1">Dinesh</span> vs <span class="team2">Venky</span></td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td><span class="team1">Prince</span> vs <span class="team2">Sharwin</span></td>
-                </tr>
-                <tr>
-                    <td>18</td>
-                    <td><span class="team1">Ajay</span> vs <span class="team2">Balu</span></td>
-                </tr>
-                <tr>
-                    <td>19</td>
-                    <td><span class="team1">Prakash</span> vs <span class="team2">Honey</span></td>
-                </tr>
-                <tr>
-                    <td>20</td>
-                    <td><span class="team1">Karthik</span> vs <span class="team2">Sharwin</span></td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td><span class="team1">Dinesh</span> vs <span class="team2">Ajay</span></td>
-                </tr>
-                <tr>
-                    <td>22</td>
-                    <td><span class="team1">Prince</span> vs <span class="team2">Prakash</span></td>
-                </tr>
-                <tr>
-                    <td>23</td>
-                    <td><span class="team1">Anil</span> vs <span class="team2">Balu</span></td>
-                </tr>
-                <tr>
-                    <td>24</td>
-                    <td><span class="team1">Venky</span> vs <span class="team2">Honey</span></td>
-                </tr>
-                <tr>
-                    <td>25</td>
-                    <td><span class="team1">Karthik</span> vs <span class="team2">Honey</span></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="tables-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Match No.</th>
+                        <th>Matchup</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><span class="team1">Karthik</span> vs <span class="team2">Dinesh</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><span class="team1">Prince</span> vs <span class="team2">Anil</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><span class="team1">Venky</span> vs <span class="team2">Sharwin</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><span class="team1">Ajay</span> vs <span class="team2">Prakash</span></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><span class="team1">Balu</span> vs <span class="team2">Honey</span></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><span class="team1">Karthik</span> vs <span class="team2">Prince</span></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><span class="team1">Dinesh</span> vs <span class="team2">Anil</span></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><span class="team1">Venky</span> vs <span class="team2">Ajay</span></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td><span class="team1">Sharwin</span> vs <span class="team2">Prakash</span></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><span class="team1">Balu</span> vs <span class="team2">Karthik</span></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td><span class="team1">Dinesh</span> vs <span class="team2">Prince</span></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td><span class="team1">Anil</span> vs <span class="team2">Venky</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Match No.</th>
+                        <th>Matchup</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>13</td>
+                        <td><span class="team1">Sharwin</span> vs <span class="team2">Balu</span></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td><span class="team1">Ajay</span> vs <span class="team2">Honey</span></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td><span class="team1">Prakash</span> vs <span class="team2">Anil</span></td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td><span class="team1">Dinesh</span> vs <span class="team2">Venky</span></td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td><span class="team1">Prince</span> vs <span class="team2">Sharwin</span></td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td><span class="team1">Ajay</span> vs <span class="team2">Balu</span></td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td><span class="team1">Prakash</span> vs <span class="team2">Honey</span></td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td><span class="team1">Karthik</span> vs <span class="team2">Sharwin</span></td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td><span class="team1">Dinesh</span> vs <span class="team2">Ajay</span></td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td><span class="team1">Prince</span> vs <span class="team2">Prakash</span></td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td><span class="team1">Anil</span> vs <span class="team2">Balu</span></td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td><span class="team1">Venky</span> vs <span class="team2">Honey</span></td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td><span class="team1">Karthik</span> vs <span class="team2">Honey</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 </html>
